@@ -94,7 +94,7 @@ int main(int argc, char** argv) {
 		
 //	std::cout << std::pow ( std::pow( pSignal[i].re(),2.)  + std::pow( pSignal[v-i].re(), 2.) , .5 ) / d  << "\t"  << std::pow ( std::pow( pSignal[i].im(), 2.) + std::pow( pSignal[-i+v].im(), 2.),.5) / d<< "\n"  ; 
 //
-	std::cout <<  (pSignal[i].re()+ pSignal[v-i].re())  / d  << "\t"  << ( pSignal[i].im() - pSignal[-i+v].im() ) / d<< "\n"  ; 
+	std::cout <<  (pSignal[i].re()+ pSignal[v-i].re())  / d  << "\t"  << -( pSignal[i].im() - pSignal[-i+v].im() ) / d<< "\n"  ; 
 	}
 	}
 
